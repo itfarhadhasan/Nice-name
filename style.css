@@ -1,0 +1,46 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: url("img/50-Beautiful-and-Minimalist-Presentation-Backgrounds-07.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+h1
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateX(-50%), translateY(-50);
+    background: url("img/small_broken_flower_background_vector_530381.jpg");
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+h1::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 30px;
+    text-shadow: -5px 5px 20px rgba(247, 247, 247, 0.295),
+                -10px 10px 30px #fff,
+                -20px 15px 40px rgb(14, 67, 211),
+                -25px 20px 50px #f7f7f7;
+
+}
+
+
